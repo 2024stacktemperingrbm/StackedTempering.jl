@@ -1,7 +1,17 @@
 name = "StackedTempering"
 uuid = "4b4759f1-b06d-4e46-9a15-fec13d1dd0af"
 authors = ["JFdCD <jfdecd@icloud.com>"]
-version = "1.0.0-DEV"
+version = "1.0.0"
+
+[deps]
+ConditionalSwaps = "d4206499-9796-4f58-8a56-acae5424fe35"
+MetropolisRules = "d7583257-2d3b-486d-b93f-702fcfec9f7b"
+RestrictedBoltzmannMachines = "12e6b396-7db5-4506-8cb6-664a4fe1e50e"
+Tail2Front2 = "64a072fb-ee9f-4297-92fa-03899ca5ed3d"
 
 [compat]
+ConditionalSwaps = "2"
+MetropolisRules = "1"
+RestrictedBoltzmannMachines = "3"
+Tail2Front2 = "1"
 julia = "1.9"
