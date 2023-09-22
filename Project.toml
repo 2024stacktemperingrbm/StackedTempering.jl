@@ -1,0 +1,7 @@
+name = "StackedTempering"
+uuid = "4b4759f1-b06d-4e46-9a15-fec13d1dd0af"
+authors = ["JFdCD <jfdecd@icloud.com>"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.9"
