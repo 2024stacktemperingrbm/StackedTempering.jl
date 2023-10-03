@@ -31,7 +31,7 @@ jobs:
         run: |
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add - <<< "${{ secrets.KAKIBOT_KEY }}"
-      - uses: julia-actions/julia-buildpkg@18a454f022b0f50114fe8941f10e24d268e8ff04
+      - uses: julia-actions/julia-buildpkg@00f9fd6b2600be0a8d80566dd4d4d2389b3468eb
         env:
           JULIA_PKG_USE_CLI_GIT: true
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
