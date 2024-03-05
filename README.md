@@ -4,7 +4,7 @@ Julia code accompanying the paper "Accelerated sampling with stacked restricted 
 
 ## Installation
 
-You will [Julia](https://julialang.org) installed on your machine.
+You will need [Julia](https://julialang.org) installed on your machine.
 
 This pacakge is not registered in the Julia General registry. We provide an independent registry that can be used to install this package and its dependencies. To install, run the following commands at the Julia Pkg REPL:
 
