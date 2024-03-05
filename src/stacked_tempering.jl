@@ -1,7 +1,3 @@
-# Deep tempering, in the form of Algorithm 2 of Desjardins et al 2014 Deep Tempering paper.
-# Other implementations in StackedRBMs.jl, but this one here is the one I'm using for the
-# NIPS paper.
-
 function stacked_tempering(rbms::NTuple{L,Any}, v0::AbstractArray; nsteps::Int = 1) where {L}
     vs, hs = sample_stack(rbms, v0)
     return stacked_tempering(rbms, vs, hs; nsteps)
