@@ -1,3 +1,15 @@
 # StackedTempering
 
-Based on Algorithm 2 of Desjardins et al 2014 Deep Tempering paper. I have explored other implementations in StackedRBMs.jl, but this one here is the one I'm using for the ICLR paper.
+## Installation
+
+
+
+## Citation
+
+If you use this code in a publication, please cite:
+
+Jorge Fernandez-de-Cossio-Diaz, Clément Roussel, Simona Cocco, and Remi Monasson.
+"Accelerated sampling with stacked restricted boltzmann machines."
+[The Twelfth International Conference on Learning Representations (2024)](https://openreview.net/forum?id=kXNJ48Hvw1).
+
+Or you can use the included [CITATION.bib](https://github.com/2024stacktemperingrbm/StackedTempering.jl/blob/master/CITATION.bib).
