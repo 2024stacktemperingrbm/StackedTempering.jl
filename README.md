@@ -4,7 +4,16 @@ Julia code accompanying the paper "Accelerated sampling with stacked restricted 
 
 ## Installation
 
-This pacakge is not registered in the Julia General registry. We provide an independent registry that can be used to install this package and its dependencies. See https://github.com/2024stacktemperingrbm/2024-ICLR-StackedTempering-JuliaRegistry for instructions.
+You will [Julia](https://julialang.org) installed on your machine.
+
+This pacakge is not registered in the Julia General registry. We provide an independent registry that can be used to install this package and its dependencies. To install, run the following commands at the Julia Pkg REPL:
+
+```julia
+pkg> registry add https://github.com/2024stacktemperingrbm/2024-ICLR-StackedTempering-JuliaRegistry.git
+pkg> add StackedTempering RestrictedBoltzmannMachines
+```
+
+See https://github.com/2024stacktemperingrbm/2024-ICLR-StackedTempering-JuliaRegistry for instructions.
 
 ## Usage
 
