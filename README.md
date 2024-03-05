@@ -2,6 +2,10 @@
 
 Julia code accompanying the paper "Accelerated sampling with stacked restricted boltzmann machines" by Jorge Fernandez-de-Cossio-Diaz, Clément Roussel, Simona Cocco, and Rémi Monasson.
 
+## Installation
+
+This pacakge is not registered in the Julia General registry. We provide an independent registry that can be used to install this package and its dependencies. See https://github.com/2024stacktemperingrbm/2024-ICLR-StackedTempering-JuliaRegistry for instructions.
+
 ## Usage
 
 The main function is `stacked_tempering`, which samples the stack of RBMs exchanging configurations between neighboring layers, while respecting the Metropolis rule.
