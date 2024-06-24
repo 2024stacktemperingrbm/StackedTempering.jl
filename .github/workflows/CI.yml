@@ -17,12 +17,12 @@ jobs:
         arch:
           - x64
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
-      - uses: julia-actions/setup-julia@ac0d62164df5a47de404f4e96ce86a1a28a28d56
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+      - uses: julia-actions/setup-julia@81d42b556a18b0d67455a742fcbffdeb49b3ffb0
         with:
           version: ${{ matrix.version }}
           arch: ${{ matrix.arch }}
-      - uses: julia-actions/cache@dc1a3cdeacb521b0ca93cfc66143fcadb15a5bd0
+      - uses: julia-actions/cache@d48542bb7b6239a9391789f01d21a6bdde9ad5df
       - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/cossio/CossioJuliaRegistry.git"))'
         shell: bash
       - name: Setup SSH Keys and known_hosts
