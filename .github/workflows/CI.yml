@@ -22,7 +22,7 @@ jobs:
         with:
           version: ${{ matrix.version }}
           arch: ${{ matrix.arch }}
-      - uses: julia-actions/cache@b7788abd52452d5bc033d69796e110d9906af4ab
+      - uses: julia-actions/cache@a7bed9df697e5d7309d68afe7542a87621a8b6c8
       - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/cossio/CossioJuliaRegistry.git"))'
         shell: bash
       - name: Setup SSH Keys and known_hosts
