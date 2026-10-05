@@ -1,5 +1,8 @@
 version: 2
+
 updates:
+  # GitHub Actions: all bumps grouped into a single PR, auto-merged once CI
+  # passes (see .github/workflows/dependabot-auto-merge.yml).
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
